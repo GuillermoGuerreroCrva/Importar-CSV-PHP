@@ -31,7 +31,7 @@ if(isset($_FILES['archivo']) && $_FILES['archivo']['name'] != '') {
         }
         
         // Conectar a la base de datos PostgreSQL
-        $conn = pg_connect("host=187.160.239.37 dbname=feria user=postgres password=Eisa2022.");
+        $conn = pg_connect("");
         if(!$conn) {
             die("Error de conexión: " . pg_last_error());
         }
